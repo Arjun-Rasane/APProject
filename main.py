@@ -28,25 +28,23 @@ temp_kelvin = response['main']['temp']
 temp_cel, temp_fer = kel_cel_fer(temp_kelvin)
 
 #work on time later(it isnt working)
-''''
+
 time_difference = response['timezone']
 print(time_difference)
 
+time = time.time()
+time = time + 25200
+time = time + time_difference
+time = time*1000
 
-if time_difference <= 0:
 
-    time = time.time()
-    time = int(time + 25200 - 50400)
-    time = int(time - time_difference)
-    time = int(round(time * 1000))
-else:
-    time = time.time()
-    time = int(time + 25200 + 50400)
-    time = int(time - time_difference)
-    time = int(round(time * 1000))
+
+time = dt.datetime(supportsIndex = time)
+
 
 print(time)
-'''
+
+''''
 date = dt.time()
 temp_fer = round(int(temp_fer))
 print(temp_fer)
@@ -75,3 +73,4 @@ UI.left(90)
 UI.write(date, font = ("Times", "24", "bold italic"))
 
 wn.mainloop()
+'''
