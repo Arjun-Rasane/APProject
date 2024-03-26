@@ -47,7 +47,7 @@ else:
 
 print(time)
 '''
-
+date = dt.time()
 temp_fer = round(int(temp_fer))
 print(temp_fer)
 wn = trtl.Screen()
@@ -72,6 +72,6 @@ UI.goto(-350,350)
 UI.right(90)
 UI.forward(80)
 UI.left(90)
-UI.write(time, font = ("Times", "24", "bold italic"))
+UI.write(date, font = ("Times", "24", "bold italic"))
 
 wn.mainloop()
