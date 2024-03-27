@@ -7,10 +7,10 @@ import time
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 API_KEY = "e7830c51a2f03f19bbecd951b282df16"
 
-wn = trtl.Screen()
-UI = trtl.Turtle()
-UI.penup()
 
+
+
+'''
 UI.goto(-200, 0)
 UI.write("Pick A City: ", font =  ("times","24", "bold italic"))
 UI.goto(-70,0)
@@ -19,309 +19,309 @@ wn.listen()
 
 def enter_press():
     UI.clear()
+    UI.goto(0,0)
 
 def a_press():
-    UI.write("a")
-    UI.forward(10)
+    UI.write("a", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def A_press() :
-    UI.write("A")
-    UI.forward(10)
+    UI.write("A", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def b_press():
-    UI.write("b")
-    UI.forward(10)
+    UI.write("b", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def B_press() :
-    UI.write("B")
-    UI.forward(10)
+    UI.write("B", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def c_press():
-    UI.write("c")
-    UI.forward(10)
+    UI.write("c", font =  ("times","24", "bold italic"))
+    UI.forward(11)
 
 
 def C_press() :
-    UI.write("C")
-    UI.forward(10)
+    UI.write("C", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def d_press():
-    UI.write("d")
-    UI.forward(10)
-
+    UI.write("d", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def D_press() :
-    UI.write("D")
-    UI.forward(10)
+    UI.write("D", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def e_press():
-    UI.write("e")
-    UI.forward(10)
-
+    UI.write("e", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def E_press() :
-    UI.write("E")
-    UI.forward(10)
+    UI.write("E", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def f_press():
-    UI.write("f")
-    UI.forward(10)
+    UI.write("f", font =  ("times","24", "bold italic"))
+    UI.forward(8)
 
 
 def F_press() :
-    UI.write("F")
-    UI.forward(10)
+    UI.write("F", font =  ("times","24", "bold italic"))
+    UI.forward(16)
 
 def g_press():
-    UI.write("g")
-    UI.forward(10)
+    UI.write("g", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def G_press() :
-    UI.write("G")
-    UI.forward(10)
+    UI.write("G", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def h_press():
-    UI.write("h")
-    UI.forward(10)
+    UI.write("h", font =  ("times","24", "bold italic"))
+    UI.forward(13)
 
 
 def H_press() :
-    UI.write("H")
-    UI.forward(10)
+    UI.write("H", font =  ("times","24", "bold italic"))
+    UI.forward(16)
 
 def i_press():
-    UI.write("i")
+    UI.write("i", font =  ("times","24", "bold italic"))
     UI.forward(10)
 
 
 def I_press() :
-    UI.write("I")
-    UI.forward(10)
+    UI.write("I", font =  ("times","24", "bold italic"))
+    UI.forward(13)
 
 def j_press():
-    UI.write("j")
-    UI.forward(10)
+    UI.write("j", font =  ("times","24", "bold italic"))
+    UI.forward(11)
 
 
 def J_press() :
-    UI.write("J")
-    UI.forward(10)
+    UI.write("J", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def k_press():
-    UI.write("k")
-    UI.forward(10)
+    UI.write("k", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def K_press() :
-    UI.write("K")
-    UI.forward(10)
+    UI.write("K", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def l_press():
-    UI.write("l")
+    UI.write("l", font =  ("times","24", "bold italic"))
     UI.forward(10)
 
 
 def L_press() :
-    UI.write("L")
-    UI.forward(10)
+    UI.write("L", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def m_press():
-    UI.write("m")
-    UI.forward(10)
+    UI.write("m", font =  ("times","24", "bold italic"))
+    UI.forward(14)
 
 
 def M_press() :
-    UI.write("M")
-    UI.forward(10)
+    UI.write("M", font =  ("times","24", "bold italic"))
+    UI.forward(17)
 
 def n_press():
-    UI.write("n")
-    UI.forward(10)
+    UI.write("n", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def N_press() :
-    UI.write("N")
-    UI.forward(10)
+    UI.write("N", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def o_press():
-    UI.write("o")
-    UI.forward(10)
+    UI.write("o", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 
 def O_press() :
-    UI.write("O")
-    UI.forward(10)
+    UI.write("O", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def p_press():
-    UI.write("p")
-    UI.forward(10)
+    UI.write("p", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def P_press():
-    UI.write("P")
-    UI.forward(10)
+    UI.write("P", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 def q_press() :
-    UI.write("q")
-    UI.forward(10)
+    UI.write("q", font =  ("times","24", "bold italic"))
+    UI.forward(12)
     
 def Q_press():
-    UI.write("Q")
-    UI.forward(10)
+    UI.write("Q", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def r_press() :
-    UI.write("r")
-    UI.forward(10)
+    UI.write("r", font =  ("times","24", "bold italic"))
+    UI.forward(11)
 
 def R_press():
-    UI.write("R")
-    UI.forward(10)
+    UI.write("R", font =  ("times","24", "bold italic"))
+    UI.forward(16)
 
 
 def s_press() :
-    UI.write("s")
+    UI.write("s", font =  ("times","24", "bold italic"))
     UI.forward(10)
 
 def S_press():
-    UI.write("S")
-    UI.forward(10)
+    UI.write("S", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def t_press() :
-    UI.write("t")
+    UI.write("t", font =  ("times","24", "bold italic"))
     UI.forward(10)
 
 def T_press():
-    UI.write("T")
-    UI.forward(10)
+    UI.write("T", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def u_press() :
-    UI.write("u")
-    UI.forward(10)
+    UI.write("u", font =  ("times","24", "bold italic"))
+    UI.forward(13)
 
 def U_press():
-    UI.write("U")
-    UI.forward(10)
+    UI.write("U", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def v_press() :
-    UI.write("v")
-    UI.forward(10)
+    UI.write("v", font =  ("times","24", "bold italic"))
+    UI.forward(11)
 
 def V_press():
-    UI.write("V")
-    UI.forward(10)
+    UI.write("V", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def w_press() :
-    UI.write("w")
-    UI.forward(10)
+    UI.write("w", font =  ("times","24", "bold italic"))
+    UI.forward(14)
 
 def W_press():
-    UI.write("W")
-    UI.forward(10)
+    UI.write("W", font =  ("times","24", "bold italic"))
+    UI.forward(17)
 
 
 def x_press() :
-    UI.write("x")
-    UI.forward(10)
+    UI.write("x", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def X_press():
-    UI.write("X")
-    UI.forward(10)
+    UI.write("X", font =  ("times","24", "bold italic"))
+    UI.forward(15)
 
 
 def y_press() :
-    UI.write("y")
-    UI.forward(10)
+    UI.write("y", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def Y_press():
-    UI.write("Y")
-    UI.forward(10)
+    UI.write("Y", font =  ("times","24", "bold italic"))
+    UI.forward(14)
 
 
 def z_press() :
-    UI.write("z")
-    UI.forward(10)
+    UI.write("z", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
 def Z_press():
-    UI.write("Z")
-    UI.forward(10)
+    UI.write("Z", font =  ("times","24", "bold italic"))
+    UI.forward(14)
 
 def space_press():
-    UI.write(" ")
-    UI.forward(10)
+    UI.write(" ", font =  ("times","24", "bold italic"))
+    UI.forward(12)
 
-
+CITY = ""
 
 
 
 wn.listen()
 wn.onkey(a_press, "a")
 wn.onkey(A_press, "A")
-wn.onkey(a_press, "b")
-wn.onkey(A_press, "B")
-wn.onkey(a_press, "c")
-wn.onkey(A_press, "C")
-wn.onkey(a_press, "d")
-wn.onkey(A_press, "D")
-wn.onkey(a_press, "e")
-wn.onkey(A_press, "E")
-wn.onkey(a_press, "f")
-wn.onkey(A_press, "F")
-wn.onkey(a_press, "g")
-wn.onkey(A_press, "G")
-wn.onkey(a_press, "h")
-wn.onkey(A_press, "H")
-wn.onkey(a_press, "i")
-wn.onkey(A_press, "I")
-wn.onkey(a_press, "j")
-wn.onkey(A_press, "J")
-wn.onkey(a_press, "k")
-wn.onkey(A_press, "K")
-wn.onkey(a_press, "l")
-wn.onkey(A_press, "L")
-wn.onkey(a_press, "m")
-wn.onkey(A_press, "M")
-wn.onkey(a_press, "n")
-wn.onkey(A_press, "N")
-wn.onkey(a_press, "o")
-wn.onkey(A_press, "O")
-wn.onkey(a_press, "p")
-wn.onkey(A_press, "P")
-wn.onkey(a_press, "q")
-wn.onkey(A_press, "Q")
-wn.onkey(a_press, "r")
-wn.onkey(A_press, "R")
-wn.onkey(a_press, "s")
-wn.onkey(A_press, "S")
-wn.onkey(a_press, "t")
-wn.onkey(A_press, "T")
-wn.onkey(a_press, "u")
-wn.onkey(A_press, "U")
-wn.onkey(a_press, "v")
-wn.onkey(A_press, "V")
-wn.onkey(a_press, "w")
-wn.onkey(A_press, "W")
-wn.onkey(a_press, "x")
-wn.onkey(A_press, "X")
-wn.onkey(a_press, "y")
-wn.onkey(A_press, "Y")
-wn.onkey(a_press, "z")
-wn.onkey(A_press, "z")
+wn.onkey(b_press, "b")
+wn.onkey(B_press, "B")
+wn.onkey(c_press, "c")
+wn.onkey(C_press, "C")
+wn.onkey(d_press, "d")
+wn.onkey(D_press, "D")
+wn.onkey(e_press, "e")
+wn.onkey(E_press, "E")
+wn.onkey(f_press, "f")
+wn.onkey(F_press, "F")
+wn.onkey(g_press, "g")
+wn.onkey(G_press, "G")
+wn.onkey(h_press, "h")
+wn.onkey(H_press, "H")
+wn.onkey(i_press, "i")
+wn.onkey(I_press, "I")
+wn.onkey(j_press, "j")
+wn.onkey(J_press, "J")
+wn.onkey(k_press, "k")
+wn.onkey(K_press, "K")
+wn.onkey(l_press, "l")
+wn.onkey(L_press, "L")
+wn.onkey(m_press, "m")
+wn.onkey(M_press, "M")
+wn.onkey(n_press, "n")
+wn.onkey(N_press, "N")
+wn.onkey(o_press, "o")
+wn.onkey(O_press, "O")
+wn.onkey(p_press, "p")
+wn.onkey(P_press, "P")
+wn.onkey(q_press, "q")
+wn.onkey(Q_press, "Q")
+wn.onkey(r_press, "r")
+wn.onkey(R_press, "R")
+wn.onkey(s_press, "s")
+wn.onkey(S_press, "S")
+wn.onkey(t_press, "t")
+wn.onkey(T_press, "T")
+wn.onkey(u_press, "u")
+wn.onkey(U_press, "U")
+wn.onkey(v_press, "v")
+wn.onkey(V_press, "V")
+wn.onkey(w_press, "w")
+wn.onkey(W_press, "W")
+wn.onkey(x_press, "x")
+wn.onkey(X_press, "X")
+wn.onkey(y_press, "y")
+wn.onkey(Y_press, "Y")
+wn.onkey(z_press, "z")
+wn.onkey(Z_press, "Z")
 
-wn.onkey(space_press, "Space")
+wn.onkey(space_press, "space")
 wn.onkey(enter_press, "Return")
 
 
 
 
+'''
 
-CITY = input("Pick a city: ")
+
 
 
 
@@ -330,6 +330,12 @@ def kel_cel_fer(kelvin):
     celsius = kelvin - 273.15
     fahrenheit = celsius * (9/5) +32
     return celsius, fahrenheit
+
+
+CITY = input("Pick a city: ")
+
+UI = trtl.Turtle()
+UI.penup()
 
 url = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
 
@@ -367,16 +373,16 @@ else:
     time = dt.fromtimestamp(time)
 
 
-    print(time)
+   
 
 
 
     temp_fer = round(int(temp_fer))
-    print(temp_fer)
+    
 
 
 
-
+    wn = trtl.Screen()
     UI.penup()
     UI.goto(-730, 370)
     UI.write(CITY, font = ("Herculanum", "75", "bold italic"))
