@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Weather</title>
+    <style>
+        body {
+            font-family: hercules, hercules;
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+        form {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div {
+            float: left;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/search" method="post">
+            <input type="text" id="city" placeholder="Enter a city name" name="city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+
+    {% if city and image_url %}
+    <h2><p style="font-size:30px;font-family:verdana" >{{city}}</p></h2>
+    <div>
+        <div><p style="font-size:30px;font-family:verdana" >{{temp_fer}}° F {{condition}}</p></div>
+    </div>
+    <div>
+        <div><p style="font-size:20px;font-family:verdana" >Local Time: {{local_time}}</p></div>
+    </div>
+    <div>
+        <img src="{{image_url}}" alt="City Image">
+    </div>
+    
+    {% endif %}
+
+    {% if err_text %}
+    <div>
+        <div><p style="color:red">{{err_text}}</p></div>
+    </div>
+    
+    {% endif %}
+</body>
+</html>
