@@ -67,7 +67,7 @@ def search():
         if parsed_data['photos']['total'] == 0:
             url_c = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
         else:
-            url_c = parsed_data['photos']['photo'][1]['url_c']
+            url_c = parsed_data['photos']['photo'][0]['url_c']
         print(url_c)
         white = "white_img.png"
         return render_template('index.html', city=CITY, image_url=url_c, temp_fer = temp_fer, local_time = local_time, condition = condition, white = white)
