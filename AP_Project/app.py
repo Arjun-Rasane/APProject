@@ -54,6 +54,7 @@ def search():
         temp_fer = round(int(temp_fer))
         deg_sym = "°F"
         condition = (response['weather'][0]['description'])
+        print(response)
 
         #return("the temp is:"+ str(temp_fer) + "and the time is: " + str(local_time))
         photo_cond = condition+ " "
@@ -66,27 +67,13 @@ def search():
         if parsed_data['photos']['total'] == 0:
             url_c = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
         else:
-            url_c = parsed_data['photos']['photo'][0]['url_c']
+            url_c = parsed_data['photos']['photo'][1]['url_c']
         print(url_c)
-        return render_template('index.html', city=CITY, image_url=url_c, temp_fer = temp_fer, local_time = local_time, condition = condition)
+        white = "white_img.png"
+        return render_template('index.html', city=CITY, image_url=url_c, temp_fer = temp_fer, local_time = local_time, condition = condition, white = white)
     else:
         err = "City not valid"
         return render_template('index.html',err_text=err)
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-#weather api key
-'''
-BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-API_KEY = "e7830c51a2f03f19bbecd951b282df16"
-
-
-
-def kel_cel_fer(kelvin):
-    celsius = kelvin - 273.15
-    fahrenheit = celsius * (9/5) +32
-    return celsius, fahrenheit
-'''
-
