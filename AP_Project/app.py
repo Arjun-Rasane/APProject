@@ -3,11 +3,10 @@ from datetime import datetime as dt
 import requests
 import turtle as trtl
 import time as tm
-from flask import Flask
-
 from pprint import pprint
 import flickrapi
 import json
+
 apikey = '5f709e8887d22a3d3dd21ed7c27d5989'
 apisecret = '52d44856e72655cf'
 
@@ -42,23 +41,17 @@ def search():
         temp_cel, temp_fer = kel_cel_fer(temp_kelvin)
 
         time_difference = response['timezone']
-
         local_time = tm.time()
         local_time = local_time + 25200
         local_time = local_time + time_difference
         local_time = round(local_time)
-
         local_time = dt.fromtimestamp(local_time)
 
-
         temp_fer = round(int(temp_fer))
-        deg_sym = "°F"
         condition = (response['weather'][0]['description'])
-        print(response)
 
         #return("the temp is:"+ str(temp_fer) + "and the time is: " + str(local_time))
-        photo_cond = condition+ " "
-        city_name =  CITY + " architecture"
+        city_name =  CITY + " geotagged architecture"
 
         photos = flickr.photos.search(text = city_name,extras="url_c" ,per_page='10')
 
@@ -68,7 +61,6 @@ def search():
             url_c = "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
         else:
             url_c = parsed_data['photos']['photo'][0]['url_c']
-        print(url_c)
         white = "white_img.png"
         return render_template('index.html', city=CITY, image_url=url_c, temp_fer = temp_fer, local_time = local_time, condition = condition, white = white)
     else:
@@ -77,3 +69,5 @@ def search():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
