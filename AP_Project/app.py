@@ -39,7 +39,6 @@ def search():
     if x == 200:
         temp_kelvin = response['main']['temp']
         temp_cel, temp_fer = kel_cel_fer(temp_kelvin)
-
         time_difference = response['timezone']
         local_time = tm.time()
         local_time = local_time + 25200
@@ -48,10 +47,11 @@ def search():
         local_time = dt.fromtimestamp(local_time)
 
         temp_fer = round(int(temp_fer))
-        condition = (response['weather'][0]['description'])
+        weathersList = response['weather']
+        for weather in weathersList:
+            condition = (weather['description'])
 
-        #return("the temp is:"+ str(temp_fer) + "and the time is: " + str(local_time))
-        city_name =  CITY + " geotagged architecture"
+        city_name =  CITY + " architecture"
 
         photos = flickr.photos.search(text = city_name,extras="url_c" ,per_page='10')
 
